@@ -1,7 +1,10 @@
 from ast import Or
 from django.contrib import admin
+
+from supplier.models import supplier
 from .models import Payment, Order, OrderProduct
 # Register your models here.
+from supplier.models import supplied, supplier
 
 
 class OrderProductInline(admin.TabularInline):
@@ -19,3 +22,4 @@ class OrderAdmin(admin.ModelAdmin):
 admin.site.register(Payment)
 admin.site.register(Order)
 admin.site.register(OrderProduct)
+
